@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire Groupe Worship</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon en .ico -->
+<link rel="icon" type="." href="./vog-logo-simple.svg" />
+
+<!-- Ou en .png -->
+<!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rejoindre le Groupe Worship <br>Voice Of God (VOG)</h1>
+        <img src="./vog-logo-simple.svg" alt="" width="200px" height="200px">
+        <form action="https://formsubmit.co/tonemail@example.com" method="POST">
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel">
+
+            <label for="experience">Avez-vous une expérience dans le worship ?</label>
+            <select id="experience" name="experience" required>
+                <option value="">-- Choisissez --</option>
+                <option value="débutant">Débutant</option>
+                <option value="intermédiaire">Intermédiaire</option>
+                <option value="avancé">Avancé</option>
+            </select>
+
+            <label for="role">Quel rôle souhaitez-vous dans le groupe ?</label>
+            <select id="role" name="role" required>
+                <option value="">-- Choisissez --</option>
+                <option value="chant">Chantre</option>
+                <option value="instrument">Instrumentiste</option>
+                
+            </select>
+
+            <label>À quel niveau es-tu disponible pour les activités du groupe ?</label>
+            <div class="radio-group">
+            <label><input type="radio" name="disponibilite" value="toujours"> Toujours</label>
+            <label><input type="radio" name="disponibilite" value="maximum"> Au maximum</label>
+            <label><input type="radio" name="disponibilite" value="souvent"> Souvent</label>
+            </div>
+
+            <label>Es-tu baptisé du Saint-Esprit ?</label>
+            <div class="radio-group">
+                <input type="radio" id="baptise_oui" name="baptise" value="oui" required>
+                <label for="baptise_oui">Oui</label>
+
+                <input type="radio" id="baptise_non" name="baptise" value="non">
+                <label for="baptise_non">Non</label>
+            </div>
+
+            <label>Es-tu prêt à être le plus sérieux possible pour l'œuvre de Dieu ?</label>
+            <div class="radio-group">
+                <input type="radio" id="serieux_oui" name="serieux" value="oui" required>
+                <label for="serieux_oui">Oui</label>
+
+                <input type="radio" id="serieux_non" name="serieux" value="non">
+                <label for="serieux_non">Non</label>
+            </div>
+
+            <label>Es-tu prêt à participer toujours (ou le plus possible) à nos activités sur nos plateformes ?</label>
+            <div class="radio-group">
+                <input type="radio" id="activites_oui" name="activites" value="oui" required>
+                <label for="activites_oui">Oui</label>
+
+                <input type="radio" id="activites_non" name="activites" value="non">
+                <label for="activites_non">Non</label>
+            </div>
+
+            <button type="submit">Envoyer la candidature</button>
+        </form>
+    </div>
+
+</body>
+</html>
